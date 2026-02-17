@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan | Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation (Simple & Clean) -->
+    <nav class="glass-nav">
+        <div class="logo">Roshan Tajpuriya</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <img src="https://image2url.com/r2/default/images/1770947277934-16763429-0257-4e35-a635-b1aa4d9119fa.png"
+                    alt="Roshan" class="profile-img"
+                    onerror="this.src='https://via.placeholder.com/300x300/333/fff?text=Roshan'">
+                <div class="glow-ring"></div>
+            </div>
+            <h1 class="fade-in">Hi, I'm <span class="neon-text">Roshan</span></h1>
+            <h2 class="typing-text">Welcome to my personal world</h2>
+            <a href="#" id="view-profile-btn" class="btn-glow">View My Profile</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section glass-card">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                Hi, I'm Roshan. I love creativity, technology, and making unique digital content.
+                This is my personal website where you can know about me.
+            </p>
+            <div class="hobbies-grid">
+                <div class="hobby-item">
+                    <i class="fa-solid fa-camera"></i>
+                    <span>Photography</span>
+                </div>
+                <div class="hobby-item">
+                    <i class="fa-solid fa-film"></i>
+                    <span>Video Editing</span>
+                </div>
+                <div class="hobby-item">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <span>Social Media</span>
+                </div>
+                <div class="hobby-item">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <span>Designing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="section">
+        <h2 class="section-title">My Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="gallery_photo_1.png" alt="Photography"
+                    onerror="this.src='https://via.placeholder.com/400x300/222/fff?text=Photography'">
+                <div class="overlay">Photography</div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallery_tech_1.png" alt="Tech"
+                    onerror="this.src='https://via.placeholder.com/400x300/222/fff?text=Tech'">
+                <div class="overlay">Technology</div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallery_design_1.png" alt="Design"
+                    onerror="this.src='https://via.placeholder.com/400x300/222/fff?text=Design'">
+                <div class="overlay">Design</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section id="social" class="section">
+        <h2 class="section-title">Connect With Me</h2>
+        <div class="social-icons">
+            <a href="#" class="social-icon facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon tiktok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-icon youtube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section glass-card">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form">
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Write a message..." rows="4" required></textarea>
+                <button type="submit" class="btn-glow">Message Me</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Roshan</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Profile Preview Popup -->
+    <div id="profile-popup" class="popup-overlay">
+        <div class="popup-content glass-card">
+            <span class="close-popup">&times;</span>
+            <div class="popup-profile-img">
+                <img src="https://image2url.com/r2/default/images/1770947277934-16763429-0257-4e35-a635-b1aa4d9119fa.png"
+                    alt="Roshan">
+            </div>
+            <h3>Roshan Tajpuriya</h3>
+            <p class="popup-bio">Creative tech enthusiast & visual storyteller. Welcome to my personal world where code
+                meets creativity.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
